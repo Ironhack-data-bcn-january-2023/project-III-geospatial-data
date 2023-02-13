@@ -27,7 +27,7 @@ As a data engineer you have asked all the employees to show their preferences on
 - Everyone in the company is between 25 and 40, give them some place to go party.
 - The CEO is vegan.
 - If you want to make the maintenance guy happy, a basketball stadium must be around 10 Km.
-- The office dog—"Dobby" needs a hairdresser every month. Ensure there's one not too far away.
+- The office dog—[Dobby](https://www.instagram.com/dobbyisafreegalgo/) needs a hairdresser every month. Ensure there's one not too far away.
 
 ## How to approach it
 
@@ -52,6 +52,33 @@ Your result will be `a city` and a neighbourhood/zip code or adress/coordinates.
 
 #### Option C
 Be creative. But remember: always try to follow a general-to-specific approach and base your decisions always using data. 
+
+
+#### Suggested route
+
+1. Filter your database
+2. Find some candidate cities based on amount of companies (or other criteria)
+3. Find the geoJSONS for the neighbourhoods of those cities. Import these polygons into mongoDB as a collection on its own. Eg: `berlin-neigh`
+4. Set the index of this collection to 2ndsphere
+
+4. Do API calls to get info for the desired cities
+5. Save each result of the API calls as a document in a specific document: eg.: one collection for schools and each document will be a school in berlin, another school in nyc, etc
+
+6. Plot your polygons
+7. Plot your markers (layer for each type?)
+8. Plot heatmap?
+9. Plot circules? lines?
+10. Plot centroids?
+
+11. Now you need to come up with metrics:
+12. Amount of things within neighbourhood?
+13. Amount of things within a given radius?
+14. Weights for the things you're looking for?
+15. Minimum between company and points of interest?
+
+16. Make a deicison based on that
+
+
 
 
 # BONUS

@@ -73,12 +73,14 @@ Be creative. But remember: always try to follow a general-to-specific approach a
 11. Now you need to come up with metrics:
 12. Amount of things within neighbourhood?
 13. Amount of things within a given radius?
-14. Weights for the things you're looking for?
+14. Amount of things within a neighbourhood relative to its size (density)?
 15. Minimum between company and points of interest?
 
-16. Make a deicison based on that
+16. Make decisions based on that:
+  - Normalization of your data? 
+  - Weights for the things you're looking for?
 
-
+17. What is your conclusion? best place: neighbourhood? some other company? a given point?
 
 
 # BONUS

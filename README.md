@@ -54,7 +54,7 @@ Your result will be `a city` and a neighbourhood/zip code or adress/coordinates.
 Be creative. But remember: always try to follow a general-to-specific approach and base your decisions always using data. 
 
 
-## Suggested route
+## EDIT: Suggested route
 
 ### Get the data
 1. Filter your database
@@ -64,6 +64,20 @@ Be creative. But remember: always try to follow a general-to-specific approach a
 
 4. Do API calls to get info for the desired cities
 5. Save each result of the API calls as a document in a specific document: eg.: one collection for schools and each document will be a school in berlin, another school in nyc, etc
+
+```python
+# Collections with `"type": "Polygon"` 
+munich/   #collection of its neighbourhoods as polygons
+london/   #collection of its neighbourhoods as polygons
+rotterdam/   #collection of its neighbourhoods as polygons
+
+
+# Collections with `"type": "Point"` 
+schools/  #collection of schools in all three cities
+starbucks/    #collection of starbucks in all three cities
+restaurants/     #collection of restaurants in all three cities
+(...)
+```
 
 
 ### Visualize your data

@@ -66,13 +66,13 @@ Be creative. But remember: always try to follow a general-to-specific approach a
 5. Save each result of the API calls as a document in a specific document: eg.: one collection for schools and each document will be a school in berlin, another school in nyc, etc
 
 ```python
-# Collections with `"type": "Polygon"` 
+# Collections with "type": "Polygon"
 munich/   #collection of its neighbourhoods as polygons
 london/   #collection of its neighbourhoods as polygons
 rotterdam/   #collection of its neighbourhoods as polygons
 
 
-# Collections with `"type": "Point"` 
+# Collections with "type": "Point"
 schools/  #collection of schools in all three cities
 starbucks/    #collection of starbucks in all three cities
 restaurants/     #collection of restaurants in all three cities
@@ -88,10 +88,10 @@ restaurants/     #collection of restaurants in all three cities
 10. Plot centroids?
 
 ### Use a data-oriented approach
-11. Amount of things within neighbourhood?
-12. Amount of things within a given radius?
-13. Amount of things within a neighbourhood relative to its size (density)?
-14. Minimum between company and points of interest?
+11. Amount of things within neighbourhood?: query data points of a collection with neighbourhoogs of another
+12. Amount of things within a given radius?: how many results does the 4s1 API return within a given radius?
+13. Amount of things within a neighbourhood relative to its size (density)? query data points of a collection with neighbourhoogs of another / area
+14. Minimum between company and points of interest?: calculate distance querying the elements of a collection with another elements of another collection
 
 ### Results
 15. Make decisions based on that:

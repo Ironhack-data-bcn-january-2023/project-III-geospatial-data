@@ -70,22 +70,22 @@ Be creative. But remember: always try to follow a general-to-specific approach a
 6. Plot your polygons
 7. Plot your markers (layer for each type?)
 8. Plot heatmap?
-9. Plot circules? lines?
+9. Plot circules? Plot lines?
 10. Plot centroids?
 
 ### Use a data-oriented approach
-11. Now you need to come up with metrics:
-12. Amount of things within neighbourhood?
-13. Amount of things within a given radius?
-14. Amount of things within a neighbourhood relative to its size (density)?
-15. Minimum between company and points of interest?
+11. Amount of things within neighbourhood?
+12. Amount of things within a given radius?
+13. Amount of things within a neighbourhood relative to its size (density)?
+14. Minimum between company and points of interest?
 
 ### Results
-16. Make decisions based on that:
+15. Make decisions based on that:
   - Normalization of your data? 
   - Weights for the things you're looking for?
+  - Another type of metric?
 
-17. What is your conclusion? best place: neighbourhood? some other company? a given point?
+16. What is your conclusion? best place: neighbourhood? some other company? a given point?
 
 
 # BONUS
